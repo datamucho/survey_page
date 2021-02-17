@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data: Survey Form</title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <style>
+body{
+    text-align: center;
+    font-family: helvetica;
+    background-image: linear-gradient(to bottom right, blue,red);
+    color: white;
+}
+#title {
+    font-size: 40px;
+}
+#description{
+    font-size: 20px;
+}
+#body{
+    width: 600px;
+    padding: 20px;
+    margin:auto;
+    border-radius: 10px;
+    text-align:left;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: 15px;
+    color:white;
+}
+#name {
+    width: 550px;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+#email {
+    width: 550px;
+    border-radius: 10px;
+    padding: 15px;
+}
+#age {
+    width: 550px;
+    border-radius: 10px;
+    padding: 15px;
+}
+#dropdown {
+    width: 580px;
+    border-radius: 10px;
+    padding: 15px;
+}
+#comment{
+    width:550px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+#submit{
+    width: 570px;
+    padding:20px;
+    font-size:20px;
+    border-radius:10px;
+    border: none;
+    margin-top: 3%;
+    background-color:green;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <h1 id="title">Naruto Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <div id="body">
+<form id="survey-form">
+<label id="name-label" for="name">
+    <p>Name:</p>
+</label>
+<input id="name" type="text" placeholder="Enter your name" required>
+
+<label id="email-label" for="email">
+    <p>Email:</p>
+</label>
+<input id="email" type="email" placeholder="Enter your email" required>
+
+<label id="number-label" for="number">
+    <p>Age:</p>
+</label>
+<input id="age" type="number" placeholder="Enter your age" min="12" max="99" required>
+
+<p>What about your nation?</p>
+<select id="dropdown">
+
+<option value="default">Land of Fire</option><br>
+<option value="default">Land of Earth</option><br>
+<option value="default">Land of Iron</option><br>
+<option value="default">Land of Lightning</option><br>
+<option value="default">Land of Snow</option><br>
+<option value="default">Land of Sound</option><br>
+<option value="default">Land of Water</option><br>
+<option value="default">Land of Wind</option><br>
+<option value="default">Land of the Sky</option>
+</select>
+ 
+<p>What is your ninja way?</p>
+<input type="radio" name="movie" value="1">Kage</input><br>
+<input type="radio" name="movie" value="1">Rogue ninja</input><br>
+<input type="radio" name="movie" value="1">Shadow kage</input>
+
+<p>Your favorite ninja?</p>
+<input type="checkbox" name="shinobi" value="1">Itachi</input><br>
+<input type="checkbox" name="shinobi" value="1">Naruto</input><br>
+<input type="checkbox" name="shinobi" value="1">Minato</input><br>
+<input type="checkbox" name="shinobi" value="1">Sakura(just kidding she is trash)</input><br>
+
+<p>Any comments or suggestions?</p>
+<textarea id="comment" row="4" cols="40">Add your comments here</textarea>
+<input id="submit" type="submit" value="submit"></input>
+
+
+</div>
+
+</form> 
+
+
+</body>
+</html>
